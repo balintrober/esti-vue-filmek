@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="card col-sm-12 col-md-6 col-lg-4" v-for="f in films" :key="f.id">
-        <router-link :to="{name: 'Details', params: {id: f.id}}">
+        <router-link :to="{name: 'Details', params: { id: f.id }}">
           <img class="img-top w-75" :src="f.movie_banner" alt="Banner" />
         </router-link>
         <!-- <router-link to="/films">Films</router-link> -->
